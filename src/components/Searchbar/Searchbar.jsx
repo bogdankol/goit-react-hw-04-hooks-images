@@ -11,7 +11,7 @@ function Searchbar({ giveDataToApp }) {
 
   const submitHandler = (e) => {
     e.preventDefault();
-
+    console.log(`I am here`)
     giveDataToApp(value);
     setValue("");
   };
@@ -30,6 +30,7 @@ function Searchbar({ giveDataToApp }) {
           autoFocus
           placeholder="Search images and photos"
           onChange={inputHandler}
+          value={value}
         />
       </form>
     </header>
